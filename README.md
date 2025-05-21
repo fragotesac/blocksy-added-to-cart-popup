@@ -46,6 +46,8 @@ setTimeout(() => {
   document.querySelector('.ct-cart-item').blur();
 }, 3000)
 
+```
+
 ---
 
 ## ❓ FAQ
