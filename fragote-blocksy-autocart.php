@@ -17,6 +17,17 @@ add_action('wp_footer', function () {
       jQuery(document).ready(function($) {
             $(document.body).on('added_to_cart', function() {
                 const cartButton = document.querySelector('.ct-cart-item');
+		// scroll down the cart
+	          const miniCartElement = $('.ct-cart-content .woocommerce-mini-cart');
+		  if (miniCartElement.length) {
+    			// Animate the scrollTop property
+    			miniCartElement.animate({
+      			scrollTop: miniCartElement[0].scrollHeight
+    			}, 800); // 800ms duration - adjust as needed
+  		}
+
+
+
                 if (cartButton) {
                     cartButton.focus(); // abre
                     setTimeout(() => {
