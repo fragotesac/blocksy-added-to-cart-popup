@@ -20,7 +20,7 @@ add_action('wp_footer', function () {
                 if (cartButton) {
                     cartButton.focus(); // open
                     // scroll down the cart
-                    const miniCartElement = $('.ct-cart-content .woocommerce-mini-cart');
+                    const miniCartElement = jQuery('.ct-cart-content .woocommerce-mini-cart');
                     if (miniCartElement.length) {
                         // Animate the scrollTop property
                         miniCartElement.animate({
